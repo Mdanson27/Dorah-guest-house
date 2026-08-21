@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#EDEAD1" />
+  <meta name="description" content="Dorah Haven Motel — a warm, comfortable stay with direct booking enquiries by phone or WhatsApp." />
+  <meta property="og:title" content="Dorah Haven Motel" />
+  <meta property="og:description" content="Your haven away from home." />
+  <meta property="og:type" content="website" />
+  <title>Dorah Haven Motel | Your Haven Away From Home</title>
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="is-loading">
+  <div class="loader" id="siteLoader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__name" aria-label="Dorah Haven"><span>DORAH</span><span>HAVEN</span></div>
+      <svg class="loader__mark" viewBox="0 0 310 330" role="img" aria-label="Dorah Haven logo animation">
+        <path class="loader__arch loader__stroke" d="M55 285V116C55 55 99 18 155 18s100 37 100 98v169" />
+        <path class="loader__roof loader__stroke" d="M84 196L155 118L226 196" />
+        <path class="loader__roof loader__stroke loader__roof--cross" d="M122 113L190 190" />
+        <rect class="loader__chimney" x="208" y="125" width="22" height="65" rx="2" />
+        <circle class="loader__sun" cx="155" cy="161" r="13" />
+        <g class="loader__bed"><path d="M103 224V285" class="loader__stroke loader__stroke--thick" /><path d="M103 227C126 235 134 241 142 251" class="loader__stroke loader__stroke--thick" /><rect x="132" y="249" width="97" height="36" rx="14" /><rect x="119" y="244" width="35" height="22" rx="10" /></g>
+        <path class="loader__base" d="M55 285H255V313H55Z" />
+      </svg>
+      <div class="loader__script">Motel</div>
+      <div class="loader__line"><span></span></div>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Dorah Haven Motel home"><img src="assets/logo/dorah-haven-logo.svg" alt="Dorah Haven Motel" /></a>
+    <nav class="desktop-nav" aria-label="Primary navigation"><a href="#rooms">Rooms</a><a href="#amenities">Amenities</a><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <div class="header-actions"><a class="header-phone" href="tel:+256750791591">+256 750 791591</a><button class="btn btn--small btn--solid js-open-booking" type="button">Check availability</button></div>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__top"><img src="assets/logo/dorah-haven-logo.svg" alt="Dorah Haven Motel" /><button class="mobile-menu__close" id="menuClose" type="button" aria-label="Close menu">×</button></div>
+    <nav><a href="#rooms">Rooms <span>01</span></a><a href="#amenities">Amenities <span>02</span></a><a href="#gallery">Gallery <span>03</span></a><a href="#about">About <span>04</span></a><a href="#contact">Contact <span>05</span></a></nav>
+    <div class="mobile-menu__actions"><a class="btn btn--solid" href="https://wa.me/256750791591?text=Hello%20Dorah%20Haven%20Motel%2C%20I%20would%20like%20to%20make%20an%20accommodation%20enquiry." target="_blank" rel="noopener">WhatsApp us</a><a class="btn btn--outline" href="tel:+256750791591">Call +256 750 791591</a></div>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__image" aria-hidden="true"></div><div class="hero__scrim"></div>
+      <div class="hero__content shell"><p class="eyebrow eyebrow--light reveal">DORAH HAVEN MOTEL</p><h1 class="reveal">A quiet stay.<br /><em>A warmer welcome.</em></h1><p class="hero__lead reveal">Discover a restful motel experience shaped around comfort, convenience and thoughtful hospitality.</p><div class="hero__buttons reveal"><button class="btn btn--cream js-open-booking" type="button">Check availability</button><a class="btn btn--ghost-light" href="#rooms">Explore rooms</a></div></div>
+      <div class="hero__meta"><span>Direct enquiries</span><span>Call & WhatsApp</span><span>+256 750 791591</span></div><a class="hero__scroll" href="#rooms" aria-label="Scroll to rooms"><span></span>Discover</a>
+    </section>
+
+    <section class="booking-strip shell" aria-label="Availability enquiry">
+      <div class="booking-strip__field"><span>Check in</span><input id="quickCheckIn" type="date" aria-label="Check-in date" /></div>
+      <div class="booking-strip__field"><span>Check out</span><input id="quickCheckOut" type="date" aria-label="Check-out date" /></div>
+      <div class="booking-strip__field"><span>Guests</span><select id="quickGuests" aria-label="Number of guests"><option value="1">1 Guest</option><option value="2" selected>2 Guests</option><option value="3">3 Guests</option><option value="4">4 Guests</option><option value="5+">5+ Guests</option></select></div>
+      <button class="booking-strip__submit" id="quickBook" type="button">Check availability <span>↗</span></button>
+    </section>
+
+    <section class="intro section shell" id="about">
+      <div class="section-index reveal">01</div>
+      <div class="intro__copy"><p class="eyebrow reveal">WELCOME TO DORAH HAVEN</p><h2 class="display reveal">Your haven away from home.</h2><p class="body-large reveal">Dorah Haven Motel is being presented as a calm, welcoming destination where guests can slow down, settle in and enjoy a comfortable stay. This space is ready for the motel's official story, location and hospitality promise.</p><div class="intro__actions reveal"><a href="#rooms" class="text-link">Explore our rooms <span>→</span></a><a href="tel:+256750791591" class="text-link">Speak to us <span>→</span></a></div></div>
+      <div class="intro__visual reveal"><img src="assets/placeholders/house-4.svg" alt="Dorah Haven exterior photo placeholder" /><div class="intro__badge"><strong>Warm.</strong><span>Simple. Restful.</span></div></div>
+    </section>
+
+    <section class="rooms section section--warm" id="rooms"><div class="shell">
+      <div class="section-heading"><div><p class="eyebrow reveal">STAY YOUR WAY</p><h2 class="display reveal">Rooms made for rest.</h2></div><p class="section-heading__copy reveal">Room names, rates, occupancy and amenities will be updated once the final room catalogue is supplied. The structure is already ready for real inventory.</p></div>
+      <div class="room-grid">
+        <article class="room-card reveal"><div class="room-card__image"><img src="assets/placeholders/house-2.svg" alt="Room photo placeholder" /><span class="room-card__tag">Room 01</span></div><div class="room-card__body"><div><p class="room-card__kicker">ROOM TYPE PLACEHOLDER</p><h3>Classic Haven Room</h3></div><div class="room-card__features"><span>2 Guests</span><span>1 Bed</span><span>Private bath</span></div><div class="room-card__footer"><span>Rate to be confirmed</span><button type="button" class="round-link js-room-enquire" data-room="Classic Haven Room" aria-label="Enquire about Classic Haven Room">↗</button></div></div></article>
+        <article class="room-card room-card--offset reveal"><div class="room-card__image"><img src="assets/placeholders/house-5.svg" alt="Room photo placeholder" /><span class="room-card__tag">Room 02</span></div><div class="room-card__body"><div><p class="room-card__kicker">ROOM TYPE PLACEHOLDER</p><h3>Deluxe Haven Room</h3></div><div class="room-card__features"><span>2 Guests</span><span>1 Bed</span><span>Private bath</span></div><div class="room-card__footer"><span>Rate to be confirmed</span><button type="button" class="round-link js-room-enquire" data-room="Deluxe Haven Room" aria-label="Enquire about Deluxe Haven Room">↗</button></div></div></article>
+        <article class="room-card reveal"><div class="room-card__image"><img src="assets/placeholders/house-3.svg" alt="Room photo placeholder" /><span class="room-card__tag">Room 03</span></div><div class="room-card__body"><div><p class="room-card__kicker">ROOM TYPE PLACEHOLDER</p><h3>Signature Haven Room</h3></div><div class="room-card__features"><span>2 Guests</span><span>1 Bed</span><span>Private bath</span></div><div class="room-card__footer"><span>Rate to be confirmed</span><button type="button" class="round-link js-room-enquire" data-room="Signature Haven Room" aria-label="Enquire about Signature Haven Room">↗</button></div></div></article>
+      </div><div class="center-action reveal"><button class="btn btn--solid js-open-booking" type="button">Enquire about a stay</button></div>
+    </div></section>
+
+    <section class="amenities section shell" id="amenities"><div class="section-index reveal">02</div><div class="amenities__top"><div><p class="eyebrow reveal">EVERYDAY COMFORT</p><h2 class="display reveal">Everything you need,<br />nothing you don't.</h2></div><p class="body-large reveal">These amenity labels are placeholders and can be switched to the motel's confirmed facilities without redesigning the section.</p></div><div class="amenity-grid"><div class="amenity reveal"><span class="amenity__icon">⌁</span><div><strong>Wi‑Fi</strong><small>Placeholder amenity</small></div></div><div class="amenity reveal"><span class="amenity__icon">P</span><div><strong>Parking</strong><small>Placeholder amenity</small></div></div><div class="amenity reveal"><span class="amenity__icon">☕</span><div><strong>Breakfast</strong><small>Placeholder amenity</small></div></div><div class="amenity reveal"><span class="amenity__icon">24</span><div><strong>Guest support</strong><small>Placeholder amenity</small></div></div><div class="amenity reveal"><span class="amenity__icon">◒</span><div><strong>Hot water</strong><small>Placeholder amenity</small></div></div><div class="amenity reveal"><span class="amenity__icon">TV</span><div><strong>Entertainment</strong><small>Placeholder amenity</small></div></div><div class="amenity reveal"><span class="amenity__icon">✦</span><div><strong>Housekeeping</strong><small>Placeholder amenity</small></div></div><div class="amenity reveal"><span class="amenity__icon">☾</span><div><strong>Quiet comfort</strong><small>Placeholder amenity</small></div></div></div></section>
+
+    <section class="experience section"><div class="experience__image reveal"><img src="assets/placeholders/house-1.svg" alt="Dorah Haven property image placeholder" /></div><div class="experience__content"><p class="eyebrow eyebrow--light reveal">THE DORAH EXPERIENCE</p><h2 class="display display--light reveal">A stay that feels easy from the moment you arrive.</h2><p class="reveal">The final photography will carry this section. For now, the design already establishes a premium visual rhythm and a clear hospitality story.</p><div class="experience__points reveal"><div><span>01</span><strong>Comfortable spaces</strong></div><div><span>02</span><strong>Thoughtful hospitality</strong></div><div><span>03</span><strong>Simple direct booking</strong></div></div></div></section>
+
+    <section class="gallery section shell" id="gallery"><div class="section-heading"><div><p class="eyebrow reveal">A GLIMPSE OF DORAH HAVEN</p><h2 class="display reveal">See the stay before you arrive.</h2></div><p class="section-heading__copy reveal">House placeholders are being used until the real room, exterior, reception and amenity photography is supplied.</p></div><div class="gallery-grid"><figure class="gallery-card gallery-card--large reveal"><img src="assets/placeholders/house-4.svg" alt="Exterior placeholder" /><figcaption>Exterior</figcaption></figure><figure class="gallery-card reveal"><img src="assets/placeholders/house-2.svg" alt="Room placeholder" /><figcaption>Rooms</figcaption></figure><figure class="gallery-card reveal"><img src="assets/placeholders/house-6.svg" alt="Amenities placeholder" /><figcaption>Amenities</figcaption></figure><figure class="gallery-card gallery-card--wide reveal"><img src="assets/placeholders/house-3.svg" alt="Evening view placeholder" /><figcaption>Evenings at Dorah</figcaption></figure></div></section>
+
+    <section class="trust section section--warm"><div class="shell trust__grid"><div class="trust__heading"><p class="eyebrow reveal">WHY DORAH HAVEN</p><h2 class="display reveal">Built around the guest.</h2></div><div class="trust__items"><article class="trust-item reveal"><span>01</span><h3>Comfort first</h3><p>Rooms and spaces designed to make every stay feel calm and uncomplicated.</p></article><article class="trust-item reveal"><span>02</span><h3>Direct access</h3><p>Call or WhatsApp the motel directly when you need availability information.</p></article><article class="trust-item reveal"><span>03</span><h3>Clear choices</h3><p>Room types, inclusions and rates will be presented in one simple booking journey.</p></article><article class="trust-item reveal"><span>04</span><h3>Warm hospitality</h3><p>A brand experience centred on welcome, rest and personal attention.</p></article></div></div></section>
+
+    <section class="reviews section shell"><div class="reviews__label reveal">GUEST STORIES</div><div class="reviews__quote reveal">“Guest reviews will live here once Dorah Haven's verified feedback is supplied.”</div><div class="reviews__meta reveal"><span>★★★★★</span><strong>Verified guest review placeholder</strong></div></section>
+
+    <section class="faq section shell"><div class="faq__heading"><p class="eyebrow reveal">GOOD TO KNOW</p><h2 class="display reveal">Frequently asked questions.</h2></div><div class="faq__list"><details class="faq-item reveal"><summary>What time is check-in and checkout?<span>+</span></summary><p>Official check-in and checkout times will be added once confirmed by Dorah Haven Motel.</p></details><details class="faq-item reveal"><summary>How do I reserve a room?<span>+</span></summary><p>You can send a direct WhatsApp availability enquiry or call +256 750 791591. A fuller booking system can be connected later.</p></details><details class="faq-item reveal"><summary>What amenities are available?<span>+</span></summary><p>The amenities currently shown are placeholders. The final website will display only confirmed motel facilities.</p></details><details class="faq-item reveal"><summary>Where is Dorah Haven Motel located?<span>+</span></summary><p>The precise address and map will be added when the official location information is supplied.</p></details></div></section>
+
+    <section class="contact-cta" id="contact"><div class="contact-cta__image" aria-hidden="true"></div><div class="contact-cta__overlay"></div><div class="contact-cta__content shell"><p class="eyebrow eyebrow--light reveal">YOUR STAY STARTS HERE</p><h2 class="reveal">Ready for your next<br /><em>quiet escape?</em></h2><div class="contact-cta__actions reveal"><button type="button" class="btn btn--cream js-open-booking">Check availability</button><a class="btn btn--ghost-light" href="tel:+256750791591">Call +256 750 791591</a></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="shell footer__main"><div class="footer__brand"><img src="assets/logo/dorah-haven-logo.svg" alt="Dorah Haven Motel" /><p>Your haven away from home.</p></div><div class="footer__links"><div><span>Explore</span><a href="#rooms">Rooms</a><a href="#amenities">Amenities</a><a href="#gallery">Gallery</a><a href="#about">About</a></div><div><span>Contact</span><a href="tel:+256750791591">+256 750 791591</a><a href="https://wa.me/256750791591" target="_blank" rel="noopener">WhatsApp</a><a href="#contact">Location — to be added</a></div></div></div><div class="shell footer__bottom"><span>© 2026 Dorah Haven Motel</span><span>Website preview • content placeholders in use</span></div></footer>
+
+  <div class="floating-contact" aria-label="Quick contact"><a class="floating-contact__call" href="tel:+256750791591" aria-label="Call Dorah Haven Motel"><span>Call</span>☎</a><a class="floating-contact__wa" href="https://wa.me/256750791591?text=Hello%20Dorah%20Haven%20Motel%2C%20I%20would%20like%20to%20make%20an%20accommodation%20enquiry." target="_blank" rel="noopener" aria-label="WhatsApp Dorah Haven Motel"><span>WhatsApp</span>↗</a></div>
+
+  <div class="booking-modal" id="bookingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="bookingTitle"><div class="booking-modal__backdrop js-close-booking"></div><div class="booking-modal__panel"><button class="booking-modal__close js-close-booking" type="button" aria-label="Close booking form">×</button><p class="eyebrow">DIRECT ENQUIRY</p><h2 id="bookingTitle">Check your stay.</h2><p class="booking-modal__intro">Complete the details below and we'll prepare a WhatsApp message to Dorah Haven Motel.</p><form id="bookingForm"><label><span>Check in</span><input id="checkIn" type="date" required /></label><label><span>Check out</span><input id="checkOut" type="date" required /></label><label><span>Guests</span><select id="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></label><label><span>Room preference</span><select id="roomPreference"><option value="Any available room">Any available room</option><option value="Classic Haven Room">Classic Haven Room</option><option value="Deluxe Haven Room">Deluxe Haven Room</option><option value="Signature Haven Room">Signature Haven Room</option></select></label><label class="booking-modal__full"><span>Your name</span><input id="guestName" type="text" placeholder="Name" /></label><label class="booking-modal__full"><span>Extra note</span><textarea id="guestNote" rows="3" placeholder="Optional message"></textarea></label><button class="btn btn--solid booking-modal__submit" type="submit">Continue on WhatsApp <span>↗</span></button></form><a class="booking-modal__call" href="tel:+256750791591">Prefer to call? <strong>+256 750 791591</strong></a></div></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
