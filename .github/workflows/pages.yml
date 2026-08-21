@@ -1,3 +1,4 @@
+# GitHub Pages deployment workflow - source enabled 2026-08-21
 name: Deploy Dorah Haven to GitHub Pages
 
 on:
