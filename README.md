@@ -1,6 +1,16 @@
-# Dorah Haven Motel Website
+<p align="center">
+  <img src="assets/github-banner.svg" alt="Dorah Haven Motel — Hospitality Experience" width="100%" />
+</p>
 
-Premium responsive hospitality website for **Dorah Haven Motel**.
+<p align="center">
+  <strong>A warm, premium and mobile-ready hospitality website designed around the Dorah Haven brand.</strong>
+</p>
+
+<p align="center">
+  <code>Responsive Design</code> · <code>GitHub Pages</code> · <code>WhatsApp</code> · <code>Brand UI</code>
+</p>
+
+---
 
 ## Current build
 
@@ -41,3 +51,7 @@ python -m http.server 8080
 ```
 
 Then visit `http://localhost:8080`.
+
+---
+
+<p align="center"><strong>Designed to turn a property listing into a hospitality brand experience.</strong></p>
